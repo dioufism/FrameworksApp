@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-   // @Environment(\.presentationMode) private var presentaionMode
+    // @Environment(\.presentationMode) private var presentaionMode
     @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView =  false
     
@@ -17,19 +17,8 @@ struct FrameworkDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                HStack {
-                    Spacer()
-                    Button {
-                        //presentaionMode.wrappedValue.dismiss()
-                        isShowingDetailView =  false
-                    } label: {
-                        Image(systemName: "xmark")
-                            .foregroundColor(Color(.label))
-                            .imageScale(.large)
-                            .frame(width: 44, height: 44)
-                    }
-                }
-                .padding()
+                XdismissButton(isShowingDetailView: $isShowingDetailView)
+                    .padding()
                 
                 Spacer()
                 
@@ -51,7 +40,7 @@ struct FrameworkDetailView: View {
                     SafariView(url: URL(string: framework.urlString!) ?? URL(string: "www.apple.com")!)
                 }
             }
-           
+            
         }
         
     }

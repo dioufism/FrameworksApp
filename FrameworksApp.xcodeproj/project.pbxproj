@@ -13,11 +13,13 @@
 		DA4810462765345600F4C805 /* FrameworksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4810452765345600F4C805 /* FrameworksAppTests.swift */; };
 		DA4810502765345600F4C805 /* FrameworksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48104F2765345600F4C805 /* FrameworksAppUITests.swift */; };
 		DA4810522765345600F4C805 /* FrameworksAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4810512765345600F4C805 /* FrameworksAppUITestsLaunchTests.swift */; };
-		DA48105F276537E900F4C805 /* Frameworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48105E276537E900F4C805 /* Frameworks.swift */; };
+		DA48105F276537E900F4C805 /* FrameworksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48105E276537E900F4C805 /* FrameworksModel.swift */; };
 		DA4810632765391A00F4C805 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4810622765391A00F4C805 /* FrameworkGridView.swift */; };
 		DA63E5DF27669E5800A686D0 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63E5DE27669E5800A686D0 /* FrameworkDetailView.swift */; };
 		DA63E5E12766A22800A686D0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63E5E02766A22800A686D0 /* ButtonView.swift */; };
 		DA63E5E42766B06400A686D0 /* FrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63E5E32766B06400A686D0 /* FrameworkViewModel.swift */; };
+		DA6B1C922771614900976086 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B1C912771614900976086 /* FrameworkTitleView.swift */; };
+		DA6B1C94277161E800976086 /* XdismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B1C93277161E800976086 /* XdismissButton.swift */; };
 		DA75CF3A276A80EA0004A73A /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75CF39276A80E90004A73A /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +50,13 @@
 		DA48104B2765345600F4C805 /* FrameworksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48104F2765345600F4C805 /* FrameworksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksAppUITests.swift; sourceTree = "<group>"; };
 		DA4810512765345600F4C805 /* FrameworksAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DA48105E276537E900F4C805 /* Frameworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frameworks.swift; sourceTree = "<group>"; };
+		DA48105E276537E900F4C805 /* FrameworksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksModel.swift; sourceTree = "<group>"; };
 		DA4810622765391A00F4C805 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		DA63E5DE27669E5800A686D0 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		DA63E5E02766A22800A686D0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		DA63E5E32766B06400A686D0 /* FrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewModel.swift; sourceTree = "<group>"; };
+		DA6B1C912771614900976086 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		DA6B1C93277161E800976086 /* XdismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XdismissButton.swift; sourceTree = "<group>"; };
 		DA75CF39276A80E90004A73A /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,10 @@
 		DA4810282765345400F4C805 = {
 			isa = PBXGroup;
 			children = (
+				DA6B1C952771638D00976086 /* Model */,
+				DA6B1C962771639800976086 /* View */,
+				DA6B1C97277163D800976086 /* ViewModel */,
+				DA6B1C982771640100976086 /* Common */,
 				DA4810332765345400F4C805 /* FrameworksApp */,
 				DA4810442765345600F4C805 /* FrameworksAppTests */,
 				DA48104E2765345600F4C805 /* FrameworksAppUITests */,
@@ -104,15 +112,9 @@
 		DA4810332765345400F4C805 /* FrameworksApp */ = {
 			isa = PBXGroup;
 			children = (
-				DA63E5DE27669E5800A686D0 /* FrameworkDetailView.swift */,
-				DA4810622765391A00F4C805 /* FrameworkGridView.swift */,
-				DA48105E276537E900F4C805 /* Frameworks.swift */,
 				DA4810342765345400F4C805 /* FrameworksAppApp.swift */,
 				DA4810382765345600F4C805 /* Assets.xcassets */,
 				DA48103A2765345600F4C805 /* Preview Content */,
-				DA63E5E02766A22800A686D0 /* ButtonView.swift */,
-				DA63E5E32766B06400A686D0 /* FrameworkViewModel.swift */,
-				DA75CF39276A80E90004A73A /* SafariView.swift */,
 			);
 			path = FrameworksApp;
 			sourceTree = "<group>";
@@ -140,6 +142,50 @@
 				DA4810512765345600F4C805 /* FrameworksAppUITestsLaunchTests.swift */,
 			);
 			path = FrameworksAppUITests;
+			sourceTree = "<group>";
+		};
+		DA6B1C952771638D00976086 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA48105E276537E900F4C805 /* FrameworksModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA6B1C962771639800976086 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B1C912771614900976086 /* FrameworkTitleView.swift */,
+				DA63E5DE27669E5800A686D0 /* FrameworkDetailView.swift */,
+				DA4810622765391A00F4C805 /* FrameworkGridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA6B1C97277163D800976086 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA63E5E32766B06400A686D0 /* FrameworkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA6B1C982771640100976086 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B1C992771643B00976086 /* UIKit Components */,
+				DA6B1C93277161E800976086 /* XdismissButton.swift */,
+				DA63E5E02766A22800A686D0 /* ButtonView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DA6B1C992771643B00976086 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA75CF39276A80E90004A73A /* SafariView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +323,10 @@
 				DA63E5DF27669E5800A686D0 /* FrameworkDetailView.swift in Sources */,
 				DA63E5E42766B06400A686D0 /* FrameworkViewModel.swift in Sources */,
 				DA4810352765345400F4C805 /* FrameworksAppApp.swift in Sources */,
-				DA48105F276537E900F4C805 /* Frameworks.swift in Sources */,
+				DA48105F276537E900F4C805 /* FrameworksModel.swift in Sources */,
+				DA6B1C922771614900976086 /* FrameworkTitleView.swift in Sources */,
 				DA75CF3A276A80EA0004A73A /* SafariView.swift in Sources */,
+				DA6B1C94277161E800976086 /* XdismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
