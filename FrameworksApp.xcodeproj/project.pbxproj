@@ -85,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA2EA2EC2777D8A300491D42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA63E5E02766A22800A686D0 /* ButtonView.swift */,
+				DA6B1C93277161E800976086 /* XdismissButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DA4810282765345400F4C805 = {
 			isa = PBXGroup;
 			children = (
@@ -173,9 +182,8 @@
 		DA6B1C982771640100976086 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DA2EA2EC2777D8A300491D42 /* Views */,
 				DA6B1C992771643B00976086 /* UIKit Components */,
-				DA6B1C93277161E800976086 /* XdismissButton.swift */,
-				DA63E5E02766A22800A686D0 /* ButtonView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
